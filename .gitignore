@@ -1,0 +1,60 @@
+$ git status # terminal ma herni akchoti k vairaxa vanyara 
+[...]
+
+
+# Untracked files:
+[...]
+__pycache__/
+.ipynb_checkpoints/
+migrations/
+# Literal File Names
+secet.txt # yo file lai ignore garxa 
+# Documentation/foo.html 
+# Documentation/gitignore.html
+file.o
+lib.a
+# src/internal.o
+
+
+# Directories
+node_modules/  # yo folder bhitra ko lai nai ignore garxa tyo  bhitra file ,folder j vayani ignore garxas
+logs/ 
+node_modules # yati grayasi yo directory ma vako yo name ko folder and yo name ko file lai ignore garxa 
+
+
+# Wildcard
+*.log
+# index.html~  # Another example is *~, which matches any file ending with ~, such as index.html~
+
+
+
+
+
+#Negation (mathi ignore gareko file haru aba ignore nagranu vanyara vannu)
+#You can use a prefix of ! to negate a file that would be ignored.
+
+*.log
+!example.log
+
+# In this example, example.log is not ignored, even though all other files ending with .log are ignored.
+
+# NOte : But be aware, you can't negate a file inside of an ignored directory:
+logs/  # (yo directory lai nai ignore garyaxa vanya chai)
+!logs/example.log # ( directory lai nai ignore garya x vanya chai tyo bhitra ko kuralai ignore nagar vanna mildaina)
+
+
+# Double Asterisk
+
+# ** can be used to match any number of directories.
+**/logs # **/logs matches all files or directories named logs (same as the pattern logs) in this repository
+
+
+# Comments
+# comment 
+
+
+# Environments
+.env
+.venv
+env/
+venv/
