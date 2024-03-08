@@ -1,8 +1,7 @@
 """
-    CS5001 Fall 2022
-    Final Project: Brain Tumor Segmentation
-    - Testing a pretrained model
-    Hua Wang
+    Contract Study : Brain Tumor Segmentation
+    -Training and validating a U-Net model
+    Madan Baduwal
 """
 from unet.util import *
 from unet.model import *

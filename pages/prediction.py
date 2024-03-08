@@ -29,7 +29,10 @@ def load_model(model_name: str):
 
 # model option
 st.header("Contract Study: Brain tumor segmentation")
-st.subheader("Select a pre-trained model:")
+st.markdown("<h5 style='text-align: center;'>Department of Computer Science, University of Texas Permian Basin</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center;'>baduwal_m63609@utpb.edu</h5>", unsafe_allow_html=True)
+
+st.markdown("<h5 style='text-align: left;'>Select a pre-trained model:</h5>", unsafe_allow_html=True)
 option = st.selectbox("select a model",
                       ('dice loss + cross entropy loss, l_rate = 0.0001',
                        'dice loss, l_rate = 0.0001',
@@ -39,7 +42,7 @@ option = st.selectbox("select a model",
                       label_visibility='collapsed')
 
 # file uploader
-st.subheader("Select a brain MRI image:")
+st.markdown("<h5 style='text-align: left;'>Select a brain MRI image:</h5>", unsafe_allow_html=True)
 uploaded_file = st.file_uploader("Choose a file", type=['png', 'jpg', 'tif'])
 
 col1, col2 = st.columns(2)

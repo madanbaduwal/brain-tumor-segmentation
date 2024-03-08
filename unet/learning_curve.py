@@ -1,8 +1,7 @@
 """
-    CS5001 Fall 2022
-    Final Project: Brain Tumor Segmentation
-    - Generating learning curves
-    Hua Wang
+    Contract Study : Brain Tumor Segmentation
+    -Training and validating a U-Net model
+    Madan Baduwal
 """
 from unet.test import *
 import pandas as pd
@@ -210,13 +209,13 @@ def plot_curves_multi_model(model_list, label_list, file_name):
                  loss_accuracy_df_mean['accuracy'],
                  label=label)
 
-    plt.title("Learning Curve")
-    plt.xlabel("per 10 training instances")
-    plt.ylabel("Dice score (mean of 10 training instances)")
-    plt.legend()
-    curve = plt.gcf()
-    plt.show()
-    curve.savefig(f"../data/data_analysis/{file_name}.png")
+    # plt.title("Learning Curve")
+    # plt.xlabel("per 10 training instances")
+    # plt.ylabel("Dice score (mean of 10 training instances)")
+    # plt.legend()
+    # curve = plt.gcf()
+    # plt.show()
+    # curve.savefig(f"../data/data_analysis/{file_name}.png")
 
 
 if __name__ == '__main__':

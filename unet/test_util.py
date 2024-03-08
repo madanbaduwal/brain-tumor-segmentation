@@ -1,8 +1,7 @@
 """
-    CS5001 Fall 2022
-    Final Project: Brain Tumor Segmentation
-    - Test functions in util.py
-    Hua Wang
+    Contract Study : Brain Tumor Segmentation
+    -Training and validating a U-Net model
+    Madan Baduwal
 """
 from util import *
 import unittest

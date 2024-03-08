@@ -20,23 +20,23 @@ model_dict = {model_list[0]: "pretrained1",
               model_list[3]: "pretrained4",
               model_list[4]: "pretrained5"}
 
-# show learning curves of multiple model with different learning rate
-st.subheader("Compare learning curves")
-multiple_loss = Image.open(f"{path}/accuracy_curves_multiple_loss.png")
-st.image(multiple_loss)
+# # show learning curves of multiple model with different learning rate
+# st.subheader("Compare learning curves")
+# multiple_loss = Image.open(f"{path}/accuracy_curves_multiple_loss.png")
+# st.image(multiple_loss)
 
-# display test accuracy
-df = pd.read_csv("data/data_analysis/test_accuracy.csv", index_col=False)
-st.dataframe(df, use_container_width=True)
+# # display test accuracy
+# df = pd.read_csv("data/data_analysis/test_accuracy.csv", index_col=False)
+# st.dataframe(df, use_container_width=True)
 
-# show details of selected model
-st.subheader("See details:")
-option = st.selectbox("select a model",
-                      model_list,
-                      label_visibility='collapsed')
-chosen_model = model_dict[option]
-accuracy_curve = Image.open(f"{path}/{chosen_model}_accuracy_curve.png")
-train_valid_dices = Image.open(f"{path}/{chosen_model}_train_valid_dice.png")
+# # show details of selected model
+# st.subheader("See details:")
+# option = st.selectbox("select a model",
+#                       model_list,
+#                       label_visibility='collapsed')
+# chosen_model = model_dict[option]
+# accuracy_curve = Image.open(f"{path}/{chosen_model}_accuracy_curve.png")
+# train_valid_dices = Image.open(f"{path}/{chosen_model}_train_valid_dice.png")
 
-st.image(accuracy_curve)
-st.image(train_valid_dices)
+# st.image(accuracy_curve)
+# st.image(train_valid_dices)
