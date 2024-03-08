@@ -56,5 +56,6 @@ logs/  # (yo directory lai nai ignore garyaxa vanya chai)
 # Environments
 .env
 .venv
+.myenv
 env/
 venv/
